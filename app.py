@@ -1,11 +1,13 @@
 
 from flask import Flask, request, send_file
+from flask_cors import CORS
 import yt_dlp
 import openai
 import os
 import uuid
 
 app = Flask(__name__)
+CORS(app)
 
 openai.api_key = 'YOUR_OPENAI_API_KEY'
 
@@ -51,3 +53,4 @@ def translate_audio():
 
 if __name__ == '__main__':
     app.run(port=5000)
+
