@@ -4,3 +4,4 @@ flask_cors
 yt-dlp
 openai
 gTTS
+gunicorn
